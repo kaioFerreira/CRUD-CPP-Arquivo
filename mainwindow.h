@@ -22,6 +22,10 @@ private slots:
 
     void on_pushButton_4_clicked();
 
+    void on_pushButton_5_clicked();
+
+    void on_listWidget_doubleClicked(const QModelIndex &index);
+
 private:
     Ui::MainWindow *ui;
 };

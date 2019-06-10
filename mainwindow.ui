@@ -31,7 +31,7 @@
     <property name="geometry">
      <rect>
       <x>310</x>
-      <y>200</y>
+      <y>250</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -80,6 +80,16 @@
     </property>
     <property name="text">
      <string>Listar</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>20</y>
+      <width>256</width>
+      <height>192</height>
+     </rect>
     </property>
    </widget>
   </widget>

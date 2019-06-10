@@ -12,7 +12,7 @@ class MostrarCliente : public QDialog
     Q_OBJECT
 
 public:
-    explicit MostrarCliente(QWidget *parent = nullptr);
+    explicit MostrarCliente(int index,QWidget *parent = nullptr);
     ~MostrarCliente();
 
 private:
