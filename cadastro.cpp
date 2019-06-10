@@ -21,8 +21,6 @@ Cadastro::Cadastro(QWidget *parent) :
     ui->lineEditCelular->setDisabled(true);
     ui->lineEditNomeContato->setDisabled(true);
     ui->lineEditDDD2->setDisabled(true);
-
-    QMessageBox::warning(this,"AVISO","INSIRA OS DADOS A SEGUIR CORRETAMENTE");
 }
 
 Cadastro::~Cadastro()
@@ -351,7 +349,7 @@ void Cadastro::on_pushButtonCadastrar_clicked()
             <<setor<<";"
             <<cidade<<";"
             <<estado<<";"
-            <<email
+            <<email<<";"
             <<endl;
 
             QMessageBox::information(this,"SUCESSO","CADASTRO EFETUADO");
@@ -388,7 +386,7 @@ void Cadastro::on_pushButtonCadastrar_clicked()
             <<setor<<";"
             <<cidade<<";"
             <<estado<<";"
-            <<email
+            <<email<<";"
             <<endl;
 
             QMessageBox::information(this,"SUCESSO","CADASTRO EFETUADO");

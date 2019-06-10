@@ -35,7 +35,7 @@ void consultaCliente::on_pushButton_clicked()
     if(arquivo.is_open())
     {
         while(getline(arquivo, L))
-            if(L.at(0) == l.at(0) || L.at(1) == l.at(1) || L.at(2) == l.at(2))
+            if(L.at(0) == l.at(0) && L.at(1) == l.at(1) && L.at(2) == l.at(2))
             {
                 for(i=0; L[i]!=';'; i++)//Pega o Codigo
                 {
@@ -53,7 +53,7 @@ void consultaCliente::on_pushButton_clicked()
                 QTableWidgetItem *cf= new QTableWidgetItem(cpfCnpj);
                 ui->tableWidget->setItem(1,0,cf);
 
-                if(L.at(16) == ';')//Executa se for CPF
+                if(L.at(15) == ';')//Executa se for CPF
                 {
                     for(i=18; L[i]!= ';'; i++)//Pega o Nome
                     {
@@ -114,7 +114,7 @@ void consultaCliente::on_pushButton_clicked()
                     QTableWidgetItem *em= new QTableWidgetItem(email);
                     ui->tableWidget->setItem(10,0,em);
                 }
-                if(L.at(19) == ';')//Executa se for CNPJ
+               else//E== xecuta se for CNPJ
                 {
                     for(i=21; L[i]!= ';'; i++)
                     {

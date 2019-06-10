@@ -82,8 +82,12 @@ void cadastroProduto::on_BtnVertificadorCD_clicked()
         if(OP)
         {
             QMessageBox::warning(this,"Aviso","Codigo deve ser composto por 3 números.");
+            ui->leCodigo->setFocus();
+            ui->leCodigo->selectAll();
         }
         else QMessageBox::warning(this,"ERRO","Código já cadastrado ou não possui apenas 3 caracteres.");
+        ui->leCodigo->setFocus();
+        ui->leCodigo->selectAll();
     }
 }
 
