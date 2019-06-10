@@ -333,23 +333,30 @@ void Cadastro::on_pushButtonCadastrar_clicked()
         {
             QMessageBox::warning(this, "ERRO", "DDD Invalido ou Obrigatorio!");
         }
+        if(telefone.size() < 8 || telefone.size() > 9 || celular.size() != 9)
+        {
+            QMessageBox::warning(this, "ERRO", "Telefone Invalido ou Obrigatorio!");
+            return;
+        }
         else
         {
-            arquivo<<cod<<"; "
-                  <<cpfCnpj<<"; "
-                 <<nomeRazao<<"; "
+            arquivo<<cod<<";"
+                  <<cpfCnpj<<";"
+                 <<nomeRazao<<";"
                 <<ddd<<"-"
-               <<telefone<<"; "
+               <<telefone<<";"
               <<ddd2<<"-"
-             <<celular<<"; "
-            <<logradouro<<"; "
-            <<setor<<"; "
-            <<cidade<<"; "
-            <<estado<<"; "
+             <<celular<<";"
+            <<logradouro<<";"
+            <<setor<<";"
+            <<cidade<<";"
+            <<estado<<";"
             <<email
             <<endl;
 
             QMessageBox::information(this,"SUCESSO","CADASTRO EFETUADO");
+
+            close();
         }
     }
     if(cpfCnpj.size() == 14)
@@ -360,7 +367,7 @@ void Cadastro::on_pushButtonCadastrar_clicked()
             QMessageBox::warning(this, "ERRO", "DADOS INCOMPLETOS!!!");
             return;
         }
-        if(telefone.size() < 9 || telefone.size() > 9)
+        if(telefone.size() < 8 || telefone.size() > 9)
         {
             QMessageBox::warning(this, "ERRO", "Telefone Invalido ou Obrigatorio!");
             return;
@@ -371,20 +378,22 @@ void Cadastro::on_pushButtonCadastrar_clicked()
         }
         else
         {
-            arquivo<<cod<<"; "
-                  <<cpfCnpj<<"; "
-                 <<nomeRazao<<"; "
+            arquivo<<cod<<";"
+                  <<cpfCnpj<<";"
+                 <<nomeRazao<<";"
                 <<ddd<<"-"
-               <<telefone<<"; "
-              <<nomeContato<<"; "
-             <<logradouro<<"; "
-            <<setor<<"; "
-            <<cidade<<"; "
-            <<estado<<"; "
+               <<telefone<<";"
+              <<nomeContato<<";"
+             <<logradouro<<";"
+            <<setor<<";"
+            <<cidade<<";"
+            <<estado<<";"
             <<email
             <<endl;
 
             QMessageBox::information(this,"SUCESSO","CADASTRO EFETUADO");
+
+            close();
         }
     }
     arquivo.close();
