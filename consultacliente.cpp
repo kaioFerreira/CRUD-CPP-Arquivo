@@ -23,7 +23,7 @@ consultaCliente::~consultaCliente()
 void consultaCliente::on_pushButton_clicked()
 {
     std::fstream arquivo;
-    arquivo.open("teste.csv");
+    arquivo.open("Clientes.csv");
 
     std::string l, L;
     int i;
@@ -55,7 +55,7 @@ void consultaCliente::on_pushButton_clicked()
 
                 if(L.at(15) == ';')//Executa se for CPF
                 {
-                    for(i=18; L[i]!= ';'; i++)//Pega o Nome
+                    for(i=16; L[i]!= ';'; i++)//Pega o Nome
                     {
                         nomeRazao += L[i];
                     }
@@ -114,9 +114,9 @@ void consultaCliente::on_pushButton_clicked()
                     QTableWidgetItem *em= new QTableWidgetItem(email);
                     ui->tableWidget->setItem(10,0,em);
                 }
-               else//E== xecuta se for CNPJ
+               else//Executa se for CNPJ
                 {
-                    for(i=21; L[i]!= ';'; i++)
+                    for(i=19; L[i]!= ';'; i++)
                     {
                         nomeRazao += L[i];
                     }
@@ -180,7 +180,7 @@ void consultaCliente::on_pushButton_clicked()
             }
     }
     else {
-        QMessageBox::warning(this, "ERRO", "DADOS INCOMPLETOS!!!");
+        QMessageBox::warning(this, "ERRO", "CODIGO NÃO REGISTRADO!!");
         return;
     }
 }

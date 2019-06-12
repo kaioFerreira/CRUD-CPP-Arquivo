@@ -42,7 +42,7 @@ void Cadastro::on_pushButtonVerifica_clicked()
         if(cpf->validaCPF(l))
         {
             ifstream arquivo;
-            arquivo.open("teste.csv");
+            arquivo.open("Clientes.csv");
 
             if(arquivo.is_open())
             {
@@ -130,7 +130,7 @@ void Cadastro::on_pushButtonVerifica_clicked()
         if(cnpj->ValidadorCnpj(l))
         {
             ifstream arquivo;
-            arquivo.open("teste.csv");
+            arquivo.open("Clientes.csv");
 
             if(arquivo.is_open())
             {
@@ -238,7 +238,7 @@ void Cadastro::on_lineEditCPFouCNPJ_returnPressed()
 void Cadastro::on_pushButtonVerificaCod_clicked()
 {
     ifstream arquivo;
-    arquivo.open("teste.csv");
+    arquivo.open("Clientes.csv");
 
     Cliente *cod = new Cliente;
     int c;
@@ -300,7 +300,7 @@ void Cadastro::on_pushButtonVerificaCod_clicked()
 void Cadastro::on_pushButtonCadastrar_clicked()
 {
     fstream arquivo;
-    arquivo.open("teste.csv",ios::app|ios::in|ios::out);
+    arquivo.open("Clientes.csv",ios::app|ios::in|ios::out);
     arquivo.seekg(0, arquivo.end);
 
     string cod, cpfCnpj, nomeRazao, telefone, ddd, ddd2, logradouro, setor, cidade, estado, email, celular, nomeContato;
