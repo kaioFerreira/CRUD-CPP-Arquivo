@@ -176,7 +176,7 @@ void consultaCliente::on_pushButton_clicked()
                     ui->tableWidget->setItem(10,0,em);
                 }
                 ui->tableWidget->horizontalHeader()->resizeSections(QHeaderView::ResizeToContents);
-
+                return;
             }
     }
     arquivo.close();
