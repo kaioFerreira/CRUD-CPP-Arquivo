@@ -41,7 +41,6 @@ void consultaCliente::on_pushButton_clicked()
                 {
                     cod += L[i];
                 }
-
                 QTableWidgetItem *c= new QTableWidgetItem(cod);
                 ui->tableWidget->setItem(0,0,c);
 
