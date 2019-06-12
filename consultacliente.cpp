@@ -179,10 +179,10 @@ void consultaCliente::on_pushButton_clicked()
 
             }
     }
-    else {
-        QMessageBox::warning(this, "ERRO", "CODIGO NÃO REGISTRADO!!");
-        return;
-    }
+    arquivo.close();
+
+    QMessageBox::warning(this, "ERRO", "CODIGO NÃO REGISTRADO!!");
+    return;
 }
 
 void consultaCliente::on_pushButton_2_clicked()
