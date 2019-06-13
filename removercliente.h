@@ -15,9 +15,6 @@ public:
     explicit removercliente(QWidget *parent = nullptr);
     ~removercliente();
 
-private slots:
-    void on_pushButton_clicked();
-
 private:
     Ui::removercliente *ui;
 };

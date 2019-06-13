@@ -13,9 +13,3 @@ escolharemover::~escolharemover()
 {
     delete ui;
 }
-
-void escolharemover::on_pushButton_clicked()
-{
-    removercliente ui1;
-    ui1.exec();
-}

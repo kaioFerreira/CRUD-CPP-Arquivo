@@ -42,13 +42,14 @@ SOURCES += \
     mostrarcliente.cpp \
     listas.cpp \
     escolharemover.cpp \
-    removercliente.cpp
+    removercliente.cpp \
+    no.cpp \
+    lista.cpp
 
 HEADERS += \
         mainwindow.h \
     cliente.h \
     Item.h \
-    Lista.h \
     Pedido.h \
     pessoafisica.h \
     pessoajuridica.h \
@@ -61,7 +62,9 @@ HEADERS += \
     mostrarcliente.h \
     listas.h \
     escolharemover.h \
-    removercliente.h
+    removercliente.h \
+    no.h \
+    lista.h
 
 FORMS += \
         mainwindow.ui \

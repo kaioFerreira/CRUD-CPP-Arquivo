@@ -15,9 +15,6 @@ public:
     explicit escolharemover(QWidget *parent = nullptr);
     ~escolharemover();
 
-private slots:
-    void on_pushButton_clicked();
-
 private:
     Ui::escolharemover *ui;
 };

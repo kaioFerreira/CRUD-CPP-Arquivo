@@ -15,11 +15,6 @@ public:
     explicit escolhaconsulta(QWidget *parent = nullptr);
     ~escolhaconsulta();
 
-private slots:
-    void on_pushButton_clicked();
-
-    void on_pushButton_4_clicked();
-
 private:
     Ui::escolhaconsulta *ui;
 };

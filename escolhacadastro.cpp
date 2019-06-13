@@ -14,25 +14,3 @@ EscolhaCadastro::~EscolhaCadastro()
 {
     delete ui;
 }
-
-void EscolhaCadastro::on_pushButtonCliente_clicked()
-{
-    Cadastro ui1;
-    ui1.exec();
-}
-
-void EscolhaCadastro::on_pushButtonProduto_clicked()
-{
-    cadastroProduto ui;
-    ui.exec();
-}
-
-void EscolhaCadastro::on_pushButtonPedido_clicked()
-{
-
-}
-
-void EscolhaCadastro::on_pushButtonFechar_clicked()
-{
-    close();
-}

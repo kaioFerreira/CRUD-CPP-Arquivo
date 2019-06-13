@@ -13,7 +13,6 @@ string Produto::getCodigo() const
 void Produto::setCodigo(const string &value)
 {
   codigo = value;
-  cout<<codigo<<endl;
 }
 
 string Produto::getDescricao() const
@@ -34,7 +33,6 @@ float Produto::getPreco() const
 void Produto::setPreco(float value)
 {
   preco = value;
-  cout<<preco<<endl;
 }
 
 int Produto::getQuantidade() const
@@ -46,8 +44,3 @@ void Produto::setQuantidade(int value)
 {
   quantidade = value;
 }
-
-//Produto::Produto()
-//{
-//  inicio=final=0;
-//}

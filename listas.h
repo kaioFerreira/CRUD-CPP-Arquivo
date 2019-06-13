@@ -15,9 +15,6 @@ public:
     explicit Listas(QWidget *parent = nullptr);
     ~Listas();
 
-private slots:
-    void on_listWidget_doubleClicked(const QModelIndex &index);
-
 private:
     Ui::Listas *ui;
 };
