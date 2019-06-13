@@ -15,11 +15,6 @@ public:
     explicit consultaCliente(QWidget *parent = nullptr);
     ~consultaCliente();
 
-private slots:
-    void on_pushButton_clicked();
-
-    void on_pushButton_2_clicked();
-
 private:
     Ui::consultaCliente *ui;
 };

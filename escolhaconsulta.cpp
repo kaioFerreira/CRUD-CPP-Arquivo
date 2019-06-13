@@ -13,14 +13,3 @@ escolhaconsulta::~escolhaconsulta()
 {
     delete ui;
 }
-
-void escolhaconsulta::on_pushButton_clicked()
-{
-    consultaCliente ui1;
-    ui1.exec();
-}
-
-void escolhaconsulta::on_pushButton_4_clicked()
-{
-    close();
-}

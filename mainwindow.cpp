@@ -2,6 +2,13 @@
 #include "ui_mainwindow.h"
 #include "escolhacadastro.h"
 #include "escolhaconsulta.h"
+#include "mostrarcliente.h"
+#include "escolharemover.h"
+#include "listas.h"
+#include <fstream>
+#include <iostream>
+
+using namespace std;
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -29,5 +36,17 @@ void MainWindow::on_pushButton_2_clicked()
 void MainWindow::on_pushButton_4_clicked()
 {
     escolhaconsulta ui1;
+    ui1.exec();
+}
+
+void MainWindow::on_pushButton_5_clicked()
+{
+   Listas ui1;
+   ui1.exec();
+}
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    escolharemover ui1;
     ui1.exec();
 }

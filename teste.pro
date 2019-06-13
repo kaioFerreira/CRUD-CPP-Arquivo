@@ -38,13 +38,18 @@ SOURCES += \
     escolhacadastro.cpp \
     escolhaconsulta.cpp \
     consultacliente.cpp \
-    cadastroproduto.cpp
+    cadastroproduto.cpp \
+    mostrarcliente.cpp \
+    listas.cpp \
+    escolharemover.cpp \
+    removercliente.cpp \
+    no.cpp \
+    lista.cpp
 
 HEADERS += \
         mainwindow.h \
     cliente.h \
     Item.h \
-    Lista.h \
     Pedido.h \
     pessoafisica.h \
     pessoajuridica.h \
@@ -53,7 +58,13 @@ HEADERS += \
     escolhacadastro.h \
     escolhaconsulta.h \
     consultacliente.h \
-    cadastroproduto.h
+    cadastroproduto.h \
+    mostrarcliente.h \
+    listas.h \
+    escolharemover.h \
+    removercliente.h \
+    no.h \
+    lista.h
 
 FORMS += \
         mainwindow.ui \
@@ -61,7 +72,11 @@ FORMS += \
     escolhacadastro.ui \
     escolhaconsulta.ui \
     consultacliente.ui \
-    cadastroproduto.ui
+    cadastroproduto.ui \
+    mostrarcliente.ui \
+    listas.ui \
+    escolharemover.ui \
+    removercliente.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

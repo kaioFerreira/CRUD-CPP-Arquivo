@@ -16,14 +16,6 @@ public:
   explicit cadastroProduto(QWidget *parent = nullptr);
   ~cadastroProduto();
 
-private slots:
-  void on_pushButton_2_clicked();
-
-  bool ValidadorCodigo(string Aux);
-  void on_BtnVertificadorCD_clicked();
-
-  void on_BtnCadastrar_clicked();
-
 private:
   Ui::cadastroProduto *ui;
 };
