@@ -19,8 +19,18 @@ public:
     explicit Cadastro(QWidget *parent = nullptr);
     ~Cadastro();
 
+private slots:
+    void on_pushButtonVerificaCod_clicked();
+
+    void on_pushButtonFechar_clicked();
+
+    void on_pushButtonVerifica_clicked();
+
 private:
     Ui::Cadastro *ui;
+    Lista<Cliente> *cl = new Lista<Cliente>;
+    PessoaFisica *pf;
+    PessoaJuridica *pj;
 };
 
 #endif // CADASTRO_H

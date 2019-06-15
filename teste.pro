@@ -64,7 +64,7 @@ HEADERS += \
     escolharemover.h \
     removercliente.h \
     no.h \
-    lista.h
+    Lista.h
 
 FORMS += \
         mainwindow.ui \

@@ -14,3 +14,14 @@ EscolhaCadastro::~EscolhaCadastro()
 {
     delete ui;
 }
+
+void EscolhaCadastro::on_pushButtonFechar_clicked()
+{
+    close();
+}
+
+void EscolhaCadastro::on_pushButtonCliente_clicked()
+{
+    Cadastro ui1;
+    ui1.exec();
+}

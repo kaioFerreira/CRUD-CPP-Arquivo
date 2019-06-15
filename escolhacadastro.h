@@ -15,6 +15,11 @@ public:
     explicit EscolhaCadastro(QWidget *parent = nullptr);
     ~EscolhaCadastro();
 
+private slots:
+    void on_pushButtonFechar_clicked();
+
+    void on_pushButtonCliente_clicked();
+
 private:
     Ui::EscolhaCadastro *ui;
 };

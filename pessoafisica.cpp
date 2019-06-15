@@ -73,5 +73,18 @@ bool PessoaFisica::validaCPF(string CPF)
     else
     {
         return 0;
-    }   
+    }
+}
+
+bool PessoaFisica::JaExiste(PessoaFisica *aux)
+{
+    PessoaFisica *aux2 = inicio;
+    while(aux2->getCPF() != aux->getCPF())
+    {
+        aux2 = aux2->getProximo();
+        if( aux2 == 0)return false;
+    }
+
+    return true;
+
 }
